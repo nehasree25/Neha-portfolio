@@ -1,59 +1,162 @@
-# Neha Sree - Portfolio Website
+# 🌟 Neha Sree Mendu - Portfolio Website
 
-A modern, premium, fully responsive personal portfolio website with a luxurious black-themed aesthetic and cinematic UI design.
+A modern, elegant, and professional portfolio website built with React, featuring a clean monochromatic slate-blue design.
 
-## Features
+[![Live Demo](https://img.shields.io/badge/Live-Demo-blue?style=for-the-badge)](https://nehasree25.github.io/Neha-portfolio/)
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-black?style=for-the-badge&logo=github)](https://github.com/nehasree25/Neha-portfolio)
 
-- ✨ Modern React.js architecture with component-based design
-- 🎨 Premium black luxury theme with glowing accents
-- 📱 Fully responsive design (Desktop, Tablet, Mobile)
-- 🎭 Smooth animations and transitions with Framer Motion
-- 💫 Glassmorphism effects and elegant shadows
-- 🎯 Smooth scrolling navigation
-- 🌟 Interactive hover effects throughout
-- ⚡ Fast loading with optimized performance
-- 🔍 SEO-friendly structure
+---
 
-## Sections
+## 🚀 Live Website
 
-1. **Home** - Hero section with professional introduction and social links
-2. **About** - Education timeline and professional background
-3. **Skills** - Interactive skill cards with progress animations
-4. **Projects** - Featured projects with tech stack tags
-5. **Experience** - Professional timeline with detailed descriptions
-6. **Contact** - Contact form and social media links
+**Visit**: [https://nehasree25.github.io/Neha-portfolio/](https://nehasree25.github.io/Neha-portfolio/)
 
-## Tech Stack
+---
 
-- React.js 18
-- Framer Motion (animations)
-- React Icons
-- React Intersection Observer
-- CSS3 with custom properties
-- Modern ES6+ JavaScript
+## ✨ Features
 
-## Installation
+- 🎨 **Modern Design**: Clean, minimal, and professional slate-blue aesthetic
+- 📱 **Fully Responsive**: Works perfectly on all devices
+- ⚡ **Smooth Animations**: Elegant transitions and hover effects
+- 🎯 **Single Page Application**: Smooth scrolling navigation
+- 💼 **Professional Sections**: Hero, About, Skills, Experience, Projects, Contact
+- 🌐 **GitHub Pages Deployment**: Production-ready and optimized
 
-1. **Install Node.js** (if not already installed)
-   - Download from: https://nodejs.org/
-   - Recommended: LTS version
+---
 
-2. **Navigate to the project directory**
+## 🛠️ Tech Stack
+
+- **Frontend**: React 18
+- **Styling**: CSS3 with custom properties
+- **Icons**: React Icons
+- **Animations**: Framer Motion
+- **Build Tool**: Create React App
+- **Deployment**: GitHub Pages
+
+---
+
+## 📦 Installation
+
+### Prerequisites
+- Node.js (v14 or higher)
+- npm or yarn
+- Git
+
+### Setup
+
+1. **Clone the repository**
    ```bash
-   cd "c:\Users\ASUS\OneDrive\Documents\Mine\Html Css Js projects\Portfolio"
+   git clone https://github.com/nehasree25/Neha-portfolio.git
+   cd Neha-portfolio
    ```
 
-3. **Install dependencies**
+2. **Install dependencies**
    ```bash
    npm install
    ```
 
-4. **Start the development server**
+3. **Run development server**
    ```bash
    npm start
    ```
 
-5. **Open your browser**
-   - The app will automatically open at: http://localhost:3000
-   - If not, manually navigate to: http://localhost:3000
+4. **Open in browser**
+   ```
+   http://localhost:3000
+   ```
+
+---
+
+## 🚀 Deployment
+
+### Deploy to GitHub Pages
+
+1. **Build and deploy**
+   ```bash
+   npm run deploy
+   ```
+
+2. **Or use the deployment script (Windows)**
+   ```bash
+   deploy.bat
+   ```
+
+3. **Configure GitHub Pages**
+   - Go to repository Settings → Pages
+   - Select `gh-pages` branch
+   - Save
+
+Your site will be live at: `https://nehasree25.github.io/Neha-portfolio/`
+
+---
+
+## 📁 Project Structure
+
+```
+Portfolio/
+├── public/
+│   ├── index.html
+│   └── p1.jpeg
+├── src/
+│   ├── components/
+│   │   ├── Navbar.js & Navbar.css
+│   │   ├── Hero.js & Hero.css
+│   │   ├── About.js & About.css
+│   │   ├── Skills.js & Skills.css
+│   │   ├── Experience.js & Experience.css
+│   │   ├── Projects.js & Projects.css
+│   │   ├── Contact.js & Contact.css
+│   │   └── LoadingScreen.js & LoadingScreen.css
+│   ├── App.js & App.css
+│   ├── index.js
+│   └── index.css
+├── package.json
+├── DEPLOYMENT_GUIDE.md
+└── README.md
+```
+
+---
+
+## 🎨 Design System
+
+### Color Palette
+- **Primary**: `#7C93C3` (Slate Blue)
+- **Secondary**: `#A7B6D8` (Light Slate Blue)
+- **Background**: `#F8F9FC` (Soft White)
+- **Text**: `#1A1A1A` (Near Black)
+
+### Typography
+- **Font Family**: Poppins (Google Fonts)
+- **Weights**: 300, 400, 500, 600, 700, 800
+
+---
+
+## 📱 Sections
+
+1. **Hero** - Introduction with profile image and CTA buttons
+2. **About** - Background and education timeline
+3. **Skills** - Technical skills with icons
+4. **Experience** - Work experience timeline
+5. **Projects** - Portfolio projects showcase
+6. **Contact** - Contact information and social links
+
+---
+
+## 🔧 Available Scripts
+
+| Command | Description |
+|---------|-------------|
+| `npm start` | Run development server |
+| `npm run build` | Create production build |
+| `npm run deploy` | Deploy to GitHub Pages |
+| `npm test` | Run tests |
+
+---
+
+## 🌐 Connect
+
+- **Email**: [nehasreemendu@gmail.com](mailto:nehasreemendu@gmail.com)
+- **LinkedIn**: [nehasreemendu](https://www.linkedin.com/in/nehasreemendu)
+- **GitHub**: [nehasree25](https://github.com/nehasree25)
+
 

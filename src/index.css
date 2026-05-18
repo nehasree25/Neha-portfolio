@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Premium Light Slate Blue Palette */
+  --primary-color: #7C93C3;
+  --secondary-color: #A7B6D8;
+  --background-color: #F8F9FC;
+  --section-bg: #EEF2F7;
+  --card-bg: #FFFFFF;
+  --border-color: rgba(124, 147, 195, 0.15);
+  --text-primary: #1A1A1A;
+  --text-secondary: #555555;
+  --text-muted: #777777;
+  
+  /* Backward Compatibility - Old Variable Names */
+  --primary-accent: #7C93C3;
+  --hover-accent: #A7B6D8;
+  --light-bg: #F8F9FC;
+  --secondary-bg: #EEF2F7;
+  
+  /* Elegant Gradients - Light Blue Tones */
+  --gradient-primary: linear-gradient(135deg, #7C93C3, #A7B6D8);
+  --gradient-soft: linear-gradient(135deg, rgba(124, 147, 195, 0.05), rgba(167, 182, 216, 0.05));
+  --gradient-bg: linear-gradient(180deg, #F8F9FC 0%, #FFFFFF 100%);
+  
+  /* Soft Elegant Shadows */
+  --shadow-sm: 0 2px 8px rgba(124, 147, 195, 0.08);
+  --shadow-md: 0 4px 16px rgba(124, 147, 195, 0.12);
+  --shadow-lg: 0 8px 32px rgba(124, 147, 195, 0.15);
+  --shadow-glow: 0 0 30px rgba(124, 147, 195, 0.18);
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--background-color);
+  color: var(--text-primary);
+  overflow-x: hidden;
+  line-height: 1.6;
+  letter-spacing: 0.3px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--section-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--gradient-primary);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-color);
+}
+
+/* Selection */
+::selection {
+  background: var(--primary-color);
+  color: #ffffff;
+}
+
+/* Loading Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(124, 147, 195, 0.25);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(124, 147, 195, 0.4);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}

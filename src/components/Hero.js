@@ -22,7 +22,7 @@ const Hero = () => {
 
         <div className="hero-text">
           <h1 className="hero-greeting">Hi, I'm <span className="hero-name">Neha Sree Mendu</span></h1>
-          <h2 className="hero-title">Full Stack Developer</h2>
+          <h2 className="hero-title">Backend Developer</h2>
           <p className="hero-subtitle">
             Specializing in Django, scalable backend systems, and Machine Learning pipelines
           </p>

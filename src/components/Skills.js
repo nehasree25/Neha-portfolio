@@ -4,7 +4,8 @@ import {
   FaJava, 
   FaDatabase, 
   FaGitAlt, 
-  FaGithub 
+  FaGithub, 
+  FaRobot 
 } from 'react-icons/fa';
 import { 
   SiDjango, 
@@ -23,6 +24,7 @@ const Skills = () => {
     { name: 'Java', icon: <FaJava /> },
     { name: 'Django REST', icon: <SiDjango /> },
     { name: 'Machine Learning', icon: <SiScikitlearn /> },
+    { name: 'Mediapipe', icon: <FaRobot /> },
     { name: 'Scikit-learn', icon: <SiScikitlearn /> },
     { name: 'DSA', icon: <FaDatabase /> },
     { name: 'MongoDB', icon: <SiMongodb /> },

@@ -14,6 +14,11 @@ const Projects = () => {
       tech: ["Django REST Framework", "React.js", "JWT", "PostgreSQL", "AI APIs"]
     },
     {
+      title: "MentorCircle",
+      description: "MentorCircle is an AI-powered STEM mentorship and peer-learning platform that connects students with mentors and communities based on interests, skills, and goals. It supports secure authentication, mentor matching, community circles, role management, and collaborative discussions.",
+      tech: ["React", "Tailwind CSS", "Django", "Django REST Framework", "SQLite", "JWT Authentication"]
+    },
+    {
       title: "Liver Cancer Prediction",
       description: "Machine learning project focused on predicting liver cancer using medical datasets and classification models. Worked on preprocessing, model training, evaluation, and prediction systems.",
       tech: ["Python", "Scikit-learn", "Pandas", "NumPy", "Machine Learning"]

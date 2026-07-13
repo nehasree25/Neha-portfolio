@@ -26,7 +26,7 @@ const About = () => {
       <div className="about-content">
         <div className="about-intro">
           <p>
-            I'm <strong>Neha Sree Mendu</strong>, a passionate Full Stack Developer specializing in Django, 
+            I'm <strong>Neha Sree Mendu</strong>, a passionate Backend Developer specializing in Django, 
             scalable backend systems, and Machine Learning pipelines. During my B.Tech journey, I've developed 
             strong communication skills, teamwork, and collaboration abilities. I've gained expertise in backend 
             development systems, machine learning concepts, and problem-solving through hands-on projects and 

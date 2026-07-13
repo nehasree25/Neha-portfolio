@@ -4,18 +4,18 @@ import './About.css';
 const About = () => {
   const education = [
     {
-      title: "Secondary Schooling",
-      period: "2021 – 2023",
-      institution: "STAR JUNIOR COLLEGE",
-      location: "Machilipatnam, Andhra Pradesh, India",
-      details: "Stream: MPC"
-    },
-    {
       title: "Engineering",
       period: "2023 – 2027",
       institution: "SHRI VISHNU ENGINEERING COLLEGE FOR WOMEN",
       location: "Bhimavaram, Andhra Pradesh, India",
       details: "Branch: Information Technology"
+    },
+    {
+      title: "Secondary Schooling",
+      period: "2021 – 2023",
+      institution: "STAR JUNIOR COLLEGE",
+      location: "Machilipatnam, Andhra Pradesh, India",
+      details: "Stream: MPC"
     }
   ];
 

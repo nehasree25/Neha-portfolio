@@ -11,7 +11,7 @@ const Projects = () => {
     {
       title: "QuizGen",
       description: "AI-powered quiz generation platform capable of generating quizzes dynamically using AI. Includes JWT authentication, resume quiz functionality, quiz history, role-based access control, and backend API development.",
-      tech: ["Django REST Framework", "React.js", "JWT", "PostgreSQL", "AI APIs"]
+      tech: ["Django REST Framework", "React.js", "JWT", "SQLite", "AI APIs"]
     },
     {
       title: "MentorCircle",

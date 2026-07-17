@@ -1,4 +1,4 @@
-# 🌟 Neha Sree Mendu - Portfolio Website
+# Neha Sree Mendu - Portfolio Website
 
 A modern, elegant, and professional portfolio website built with React, featuring a clean monochromatic slate-blue design.
 
@@ -15,12 +15,12 @@ A modern, elegant, and professional portfolio website built with React, featurin
 
 ## ✨ Features
 
-- 🎨 **Modern Design**: Clean, minimal, and professional slate-blue aesthetic
-- 📱 **Fully Responsive**: Works perfectly on all devices
-- ⚡ **Smooth Animations**: Elegant transitions and hover effects
-- 🎯 **Single Page Application**: Smooth scrolling navigation
-- 💼 **Professional Sections**: Hero, About, Skills, Experience, Projects, Contact
-- 🌐 **GitHub Pages Deployment**: Production-ready and optimized
+- **Modern Design**: Clean, minimal, and professional slate-blue aesthetic
+-  **Fully Responsive**: Works perfectly on all devices
+-  **Smooth Animations**: Elegant transitions and hover effects
+-  **Single Page Application**: Smooth scrolling navigation
+-  **Professional Sections**: Hero, About, Skills, Experience, Projects, Contact
+- **GitHub Pages Deployment**: Production-ready and optimized
 
 ---
 

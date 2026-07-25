@@ -1,13 +1,5 @@
 # Neha Sree Mendu - Portfolio Website
 
-A modern, elegant, and professional portfolio website built with React, featuring a clean monochromatic slate-blue design.
-
-[![Live Demo](https://img.shields.io/badge/Live-Demo-blue?style=for-the-badge)](https://nehasree25.github.io/Neha-portfolio/)
-[![GitHub](https://img.shields.io/badge/GitHub-Repository-black?style=for-the-badge&logo=github)](https://github.com/nehasree25/Neha-portfolio)
-
----
-
-## 🚀 Live Website
 
 **Visit**: [https://nehasree25.github.io/Neha-portfolio/](https://nehasree25.github.io/Neha-portfolio/)
 

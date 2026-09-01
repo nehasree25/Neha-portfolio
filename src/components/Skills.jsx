@@ -5,14 +5,16 @@ import {
   FaDatabase, 
   FaGitAlt, 
   FaGithub, 
-  FaRobot 
+  FaRobot, 
+  FaReact 
 } from 'react-icons/fa';
 import { 
   SiDjango, 
   SiScikitlearn, 
   SiMongodb, 
   SiMysql, 
-  SiPostman 
+  SiPostman, 
+  SiFastapi 
 } from 'react-icons/si';
 import './Skills.css';
 
@@ -22,6 +24,8 @@ const Skills = () => {
   const skills = [
     { name: 'Python', icon: <FaPython /> },
     { name: 'Java', icon: <FaJava /> },
+    { name: 'React', icon: <FaReact /> },
+    { name: 'FastAPI', icon: <SiFastapi /> },
     { name: 'Django REST', icon: <SiDjango /> },
     { name: 'Machine Learning', icon: <SiScikitlearn /> },
     { name: 'Mediapipe', icon: <FaRobot /> },

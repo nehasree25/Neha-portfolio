@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { 
   FaPython, 
   FaJava, 
@@ -19,8 +19,6 @@ import {
 import './Skills.css';
 
 const Skills = () => {
-  const [hoveredSkill, setHoveredSkill] = useState(null);
-
   const skills = [
     { name: 'Python', icon: <FaPython /> },
     { name: 'Java', icon: <FaJava /> },
@@ -48,8 +46,6 @@ const Skills = () => {
             <div 
               key={index} 
               className="skill-card"
-              onMouseEnter={() => setHoveredSkill(index)}
-              onMouseLeave={() => setHoveredSkill(null)}
             >
               <div className="skill-icon">{skill.icon}</div>
               <div className="skill-info">

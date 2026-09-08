@@ -5,13 +5,14 @@
 .contact {
   position: relative;
   width: 100%;
-  padding: 80px 40px;
+  padding: 56px 40px;
   background: var(--color-bg-primary);
 }
 
 .contact-container {
-  max-width: 1050px;
+  max-width: 1000px;
   margin: 0 auto;
+  width: 100%;
 }
 
 /* ═══════════════════════════════════════════════════════════════
@@ -20,8 +21,8 @@
 
 .contact-wrapper {
   display: grid;
-  grid-template-columns: 0.8fr 1.2fr;
-  gap: 80px;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 60px;
   align-items: center;
 }
 
@@ -108,13 +109,14 @@
 
 .contact-form {
   width: 100%;
+  max-width: 460px;
   background: transparent;
   border: 1px solid rgba(23, 26, 70, 0.15);
   border-radius: 12px;
-  padding: 28px;
+  padding: 24px;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 14px;
 }
 
 /* ═══════════════════════════════════════════════════════════════
@@ -124,7 +126,7 @@
 .form-group {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 5px;
 }
 
 .form-group label {
@@ -145,6 +147,7 @@
   border: 1px solid rgba(23, 26, 70, 0.15);
   border-radius: 8px;
   padding: 10px 12px;
+  height: 40px;
   transition: all 0.3s ease;
   letter-spacing: 0.2px;
   outline: none;
@@ -174,6 +177,7 @@
 .form-group textarea {
   resize: vertical;
   min-height: 100px;
+  height: 100px !important;
   line-height: 1.4;
 }
 

@@ -7,7 +7,7 @@ const Experience = () => {
     {
       role: "AI Engineer Intern",
       company: "SmartX Technologies",
-      period: "March 2026 – Present",
+      period: "Feb 2026 – June 2026",
       bullets: [
         "AI-powered platforms and backend systems",
         "Wheels.ai: ML pipelines, APIs, authentication",

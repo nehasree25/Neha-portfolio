@@ -76,7 +76,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: top;
+  object-position: center;
   transition: transform 0.3s ease;
 }
 
@@ -222,6 +222,11 @@
   transform: translateY(-2px);
 }
 
+.github-link {
+  padding-left: 6px;
+  border-left: 1px solid var(--border-color);
+}
+
 /* ═══════════════════════════════════════════════════════════════
    RESPONSIVE - TABLET (1024px and below)
    ═══════════════════════════════════════════════════════════════ */
@@ -281,11 +286,11 @@
   }
 
   .project-image-wrapper {
-    height: 150px;
+    aspect-ratio: 16 / 7;
   }
 
   .project-title {
-    font-size: 1.05rem;
+    font-size: 1rem;
   }
 
   .project-description {
@@ -293,13 +298,18 @@
   }
 
   .project-info {
-    padding: 14px;
-    gap: 8px;
+    padding: 14px 16px;
+    gap: 9px;
   }
 
   .project-links {
     flex-wrap: wrap;
     gap: 7px;
+  }
+
+  .github-link {
+    padding-left: 0;
+    border-left: none;
   }
 }
 
@@ -318,7 +328,7 @@
   }
 
   .project-title {
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
 
   .project-description {
@@ -327,8 +337,8 @@
   }
 
   .project-info {
-    padding: 12px;
-    gap: 7px;
+    padding: 12px 14px;
+    gap: 8px;
   }
 
   .tech-tag {
@@ -342,10 +352,6 @@
 
   .project-link svg {
     font-size: 0.65rem;
-  }
-
-  .project-image-wrapper {
-    height: 140px;
   }
 }
 

@@ -98,8 +98,8 @@ const Skills = () => {
               <div className="achievement-item">
                 <span className="achievement-number">01</span>
                 <div className="achievement-content">
-                  <div className="achievement-title">DSH Hackathon</div>
-                  <div className="achievement-subtitle">Top 50</div>
+                  <div className="achievement-title">DSH Hacks V1</div>
+                  <div className="achievement-subtitle">Top 25% · Recognized for innovation and problem-solving.</div>
                 </div>
               </div>
 

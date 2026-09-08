@@ -92,6 +92,86 @@
 }
 
 /* ═══════════════════════════════════════════════════════════════
+   ACHIEVEMENTS SECTION
+   ═══════════════════════════════════════════════════════════════ */
+
+.achievements-section {
+  margin-top: 40px;
+  width: 100%;
+}
+
+.achievements-heading {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 0 0 20px 0;
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--color-accent-gold);
+  display: inline-block;
+}
+
+.achievements-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.achievement-item {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  padding-left: 0;
+}
+
+.achievement-item:hover {
+  transform: translateX(3px);
+}
+
+.achievement-number {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--color-accent-gold);
+  flex-shrink: 0;
+  letter-spacing: 0.5px;
+}
+
+.achievement-item:hover .achievement-number {
+  color: var(--color-accent-gold);
+  font-size: 0.95rem;
+}
+
+.achievement-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.achievement-title {
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  line-height: 1.3;
+}
+
+.achievement-item:hover .achievement-title {
+  font-weight: 700;
+}
+
+.achievement-subtitle {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  color: var(--color-text-secondary);
+  line-height: 1.4;
+}
+
+/* ═══════════════════════════════════════════════════════════════
    CENTER DIVIDER
    ═══════════════════════════════════════════════════════════════ */
 
@@ -288,6 +368,31 @@
     padding: 7px 12px;
     font-size: 0.8rem;
   }
+
+  .achievements-heading {
+    font-size: 0.85rem;
+    margin-top: 32px;
+  }
+
+  .achievements-list {
+    gap: 16px;
+  }
+
+  .achievement-item {
+    gap: 12px;
+  }
+
+  .achievement-number {
+    font-size: 0.85rem;
+  }
+
+  .achievement-title {
+    font-size: 0.9rem;
+  }
+
+  .achievement-subtitle {
+    font-size: 0.75rem;
+  }
 }
 
 /* ═══════════════════════════════════════════════════════════════
@@ -340,6 +445,31 @@
 
   .journey-item {
     gap: 12px;
+  }
+
+  .achievements-heading {
+    font-size: 0.8rem;
+    margin-top: 28px;
+  }
+
+  .achievements-list {
+    gap: 14px;
+  }
+
+  .achievement-item {
+    gap: 10px;
+  }
+
+  .achievement-number {
+    font-size: 0.8rem;
+  }
+
+  .achievement-title {
+    font-size: 0.85rem;
+  }
+
+  .achievement-subtitle {
+    font-size: 0.73rem;
   }
 
   .journey-year {
@@ -417,6 +547,31 @@
   }
 
   .journey-description {
+    font-size: 0.7rem;
+  }
+
+  .achievements-heading {
+    font-size: 0.75rem;
+    margin-top: 24px;
+  }
+
+  .achievements-list {
+    gap: 12px;
+  }
+
+  .achievement-item {
+    gap: 9px;
+  }
+
+  .achievement-number {
+    font-size: 0.75rem;
+  }
+
+  .achievement-title {
+    font-size: 0.8rem;
+  }
+
+  .achievement-subtitle {
     font-size: 0.7rem;
   }
 }

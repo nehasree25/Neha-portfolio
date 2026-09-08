@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { FaExternalLinkAlt } from 'react-icons/fa';
+import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa';
 import './Projects.css';
 
 const Projects = () => {
@@ -80,23 +80,30 @@ const Projects = () => {
               onMouseLeave={() => setHoveredProject(null)}
             >
               {/* Project Image */}
-              <motion.div
-                className="project-image-wrapper"
-                variants={imageVariants}
-                initial="rest"
-                whileHover="hover"
+              <a
+                href={project.links.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="project-image-link"
               >
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="project-image"
-                />
-                {hoveredProject === project.id && (
-                  <div className="project-overlay">
-                    <span className="view-indicator">View Project ↗</span>
-                  </div>
-                )}
-              </motion.div>
+                <motion.div
+                  className="project-image-wrapper"
+                  variants={imageVariants}
+                  initial="rest"
+                  whileHover="hover"
+                >
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="project-image"
+                  />
+                  {hoveredProject === project.id && (
+                    <div className="project-overlay">
+                      <span className="view-indicator">View Project ↗</span>
+                    </div>
+                  )}
+                </motion.div>
+              </a>
 
               {/* Project Info */}
               <div className="project-info">
@@ -107,15 +114,14 @@ const Projects = () => {
 
                 <p className="project-description">{project.description}</p>
 
-                {/* Technology Tags */}
-                <div className="project-tech">
-                  {project.tech.map((tech, idx) => (
-                    <span key={idx} className="tech-tag">{tech}</span>
-                  ))}
-                </div>
-
-                {/* Links */}
-                <div className="project-links">
+                {/* Technology Tags & GitHub Link */}
+                <div className="project-footer">
+                  <div className="project-tech">
+                    {project.tech.map((tech, idx) => (
+                      <span key={idx} className="tech-tag">{tech}</span>
+                    ))}
+                  </div>
+                  
                   <a
                     href={project.links.github}
                     className="project-link"
@@ -123,7 +129,8 @@ const Projects = () => {
                     rel="noopener noreferrer"
                     title="View on GitHub"
                   >
-                    <span>View Project</span>
+                    <FaGithub />
+                    <span>GitHub</span>
                     <FaExternalLinkAlt />
                   </a>
                 </div>

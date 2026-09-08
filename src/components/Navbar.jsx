@@ -31,7 +31,6 @@ const Navbar = () => {
         
         <div className={`menu ${menuOpen ? 'active' : ''}`}>
           <a onClick={() => scrollToSection('home')}>Home</a>
-          <a onClick={() => scrollToSection('about')}>About</a>
           <a onClick={() => scrollToSection('skills')}>Skills</a>
           <a onClick={() => scrollToSection('projects')}>Projects</a>
           <a onClick={() => scrollToSection('experience')}>Experience</a>

@@ -63,6 +63,12 @@
    PROJECT IMAGE
    ═══════════════════════════════════════════════════════════════ */
 
+.project-image-link {
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .project-image-wrapper {
   position: relative;
   width: 100%;
@@ -157,6 +163,18 @@
 }
 
 /* ═══════════════════════════════════════════════════════════════
+   PROJECT FOOTER - Tech Tags & GitHub Link
+   ═══════════════════════════════════════════════════════════════ */
+
+.project-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding-top: 1px;
+}
+
+/* ═══════════════════════════════════════════════════════════════
    TECHNOLOGY TAGS
    ═══════════════════════════════════════════════════════════════ */
 
@@ -164,6 +182,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 5px;
+  flex: 1;
 }
 
 .tech-tag {
@@ -186,14 +205,8 @@
 }
 
 /* ═══════════════════════════════════════════════════════════════
-   PROJECT LINKS
+   GITHUB LINK
    ═══════════════════════════════════════════════════════════════ */
-
-.project-links {
-  display: flex;
-  gap: 8px;
-  padding-top: 1px;
-}
 
 .project-link {
   display: inline-flex;
@@ -207,6 +220,8 @@
   transition: all 0.25s ease;
   letter-spacing: 0.2px;
   cursor: pointer;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .project-link:hover {

@@ -142,21 +142,10 @@ const Skills = () => {
                   <div className="journey-year">{item.year}</div>
                   <div className="journey-title">{item.title}</div>
 
-                  {/* Description - Animated */}
-                  <AnimatePresence>
-                    {hoveredJourney === index && (
-                      <motion.div
-                        className="journey-description"
-                        variants={descriptionVariants}
-                        initial="hidden"
-                        animate="visible"
-                        exit="exit"
-                        transition={{ duration: 0.25 }}
-                      >
-                        {item.description}
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
+                  {/* Description - Always Visible */}
+                  <div className="journey-description">
+                    {item.description}
+                  </div>
                 </div>
               </div>
             ))}

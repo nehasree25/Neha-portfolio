@@ -66,7 +66,7 @@
 .project-image-wrapper {
   position: relative;
   width: 100%;
-  height: 155px;
+  height: 180px;
   overflow: hidden;
   background: var(--color-surface-light);
   border-radius: 10px 10px 0 0;
@@ -75,7 +75,7 @@
 .project-image {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
   transition: transform 0.3s ease;
 }

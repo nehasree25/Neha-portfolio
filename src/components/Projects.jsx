@@ -11,7 +11,7 @@ const Projects = () => {
       id: 1,
       title: 'MentorCircle',
       description: 'AI-powered STEM mentorship platform connecting students with mentors and peer-learning communities.',
-      image: `${process.env.PUBLIC_URL}/mentor-circle.png`,
+      image: `${process.env.PUBLIC_URL}/projects/mentor-circle.png`,
       tech: ['React', 'Django', 'REST APIs', 'Replicate', 'STEM'],
       links: {
         project: '#',
@@ -22,7 +22,7 @@ const Projects = () => {
       id: 2,
       title: 'MarketLens',
       description: 'Financial analytics platform providing market data exploration and actionable insights through intelligent analysis.',
-      image: `${process.env.PUBLIC_URL}/marketlens.png`,
+      image: `${process.env.PUBLIC_URL}/projects/marketlens.png`,
       tech: ['yfinance', 'FastAPI', 'React', 'PostgreSQL'],
       links: {
         project: '#',
@@ -33,7 +33,7 @@ const Projects = () => {
       id: 3,
       title: 'CrossApp Agent',
       description: 'AI-powered agent designed to interact with and automate tasks across multiple applications seamlessly.',
-      image: `${process.env.PUBLIC_URL}/cross-app-agent.png`,
+      image: `${process.env.PUBLIC_URL}/projects/cross-app-agent.png`,
       tech: ['FastAPI', 'Langchain', 'Agents', 'React', 'Razorpay API'],
       links: {
         project: '#',
@@ -44,7 +44,7 @@ const Projects = () => {
       id: 4,
       title: 'Research-Agent',
       description: 'AI research assistant that gathers, analyzes, and summarizes information to accelerate research workflows.',
-      image: `${process.env.PUBLIC_URL}/research-agent.png`,
+      image: `${process.env.PUBLIC_URL}/projects/research-agent.png`,
       tech: ['Context API', 'React', 'Django REST Framework'],
       links: {
         project: '#',

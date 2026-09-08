@@ -1,0 +1,266 @@
+/* ═══════════════════════════════════════════════════════════════════════════
+   COPY-PASTE CSS SNIPPETS
+   Use these snippets when styling components. All values reference global
+   CSS variables, so they automatically update if the design system changes.
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+/* ─────────────────────────────────────────────────────────────────────────
+   DISPLAY HEADINGS (Serif, Large)
+   ───────────────────────────────────────────────────────────────────────── */
+
+.example-display-heading {
+  font-family: var(--font-display);
+  font-size: var(--fs-display-lg);
+  font-weight: 500;
+  color: var(--text-primary);
+  line-height: var(--lh-tight);
+  letter-spacing: var(--ls-tight);
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
+   SECTION HEADINGS (Sans-serif, Strong)
+   ───────────────────────────────────────────────────────────────────────── */
+
+.example-section-heading {
+  font-family: var(--font-body);
+  font-size: var(--fs-heading-1);
+  font-weight: var(--fw-semibold);
+  color: var(--text-primary);
+  line-height: var(--lh-tight);
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
+   SUBHEADINGS (Sans-serif, Secondary)
+   ───────────────────────────────────────────────────────────────────────── */
+
+.example-subheading {
+  font-family: var(--font-body);
+  font-size: var(--fs-heading-3);
+  font-weight: var(--fw-semibold);
+  color: var(--text-secondary);
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
+   BODY TEXT (Main reading text)
+   ───────────────────────────────────────────────────────────────────────── */
+
+.example-body {
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  font-weight: var(--fw-regular);
+  color: var(--text-primary);
+  line-height: var(--lh-normal);
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
+   METADATA / LABELS (Small uppercase)
+   ───────────────────────────────────────────────────────────────────────── */
+
+.example-label {
+  font-family: var(--font-body);
+  font-size: var(--fs-label);
+  font-weight: var(--fw-semibold);
+  text-transform: uppercase;
+  color: var(--text-muted);
+  letter-spacing: var(--ls-extra-wide);
+}
+
+.example-label-accent {
+  font-family: var(--font-body);
+  font-size: var(--fs-label);
+  font-weight: var(--fw-semibold);
+  text-transform: uppercase;
+  color: var(--color-accent-gold);
+  letter-spacing: var(--ls-extra-wide);
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
+   CARDS / SURFACES
+   ───────────────────────────────────────────────────────────────────────── */
+
+.example-card {
+  background: var(--color-surface-light);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: var(--shadow-md);
+  color: var(--text-primary);
+}
+
+.example-card-secondary {
+  background: var(--color-surface-peach);
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: var(--shadow-sm);
+  color: var(--text-primary);
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
+   BUTTONS
+   ───────────────────────────────────────────────────────────────────────── */
+
+.example-button-primary {
+  background: var(--button-primary-bg);
+  color: var(--button-primary-text);
+  border: none;
+  padding: 12px 24px;
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  font-weight: var(--fw-semibold);
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.example-button-primary:hover {
+  background: var(--button-primary-hover);
+}
+
+.example-button-secondary {
+  background: var(--button-secondary-bg);
+  color: var(--button-secondary-text);
+  border: 1px solid var(--button-secondary-border);
+  padding: 12px 24px;
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  font-weight: var(--fw-semibold);
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.example-button-secondary:hover {
+  background: var(--button-secondary-hover-bg);
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
+   DIVIDERS / BORDERS
+   ───────────────────────────────────────────────────────────────────────── */
+
+.example-divider {
+  border-top: 1px solid var(--border-color);
+}
+
+.example-divider-subtle {
+  border-top: 1px solid var(--border-subtle);
+}
+
+.example-divider-accent {
+  border-top: 2px solid var(--border-accent);
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
+   BACKGROUNDS
+   ───────────────────────────────────────────────────────────────────────── */
+
+.example-section-primary {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+.example-section-secondary {
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
+.example-section-tertiary {
+  background: var(--bg-tertiary);
+  color: var(--text-primary);
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
+   TEXT ON DARK BACKGROUNDS
+   ───────────────────────────────────────────────────────────────────────── */
+
+.example-dark-section {
+  background: var(--color-text-primary);
+}
+
+.example-text-on-dark {
+  color: var(--text-on-dark);
+  background: var(--color-text-primary);
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
+   SCRIPT ACCENTS (Use sparingly!)
+   ───────────────────────────────────────────────────────────────────────── */
+
+.example-script {
+  font-family: var(--font-script);
+  font-size: 1.5rem;
+  color: var(--text-secondary);
+  font-weight: 400;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
+   INPUT FIELDS
+   ───────────────────────────────────────────────────────────────────────── */
+
+.example-input {
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  color: var(--text-primary);
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  padding: 12px 16px;
+  border-radius: 4px;
+}
+
+.example-input:focus {
+  outline: none;
+  border-color: var(--color-text-secondary);
+  box-shadow: 0 0 0 2px rgba(41, 44, 99, 0.1);
+}
+
+.example-input::placeholder {
+  color: var(--text-muted);
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
+   LINKS
+   ───────────────────────────────────────────────────────────────────────── */
+
+.example-link {
+  color: var(--text-secondary);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.example-link:hover {
+  border-bottom-color: var(--color-accent-gold);
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
+   BADGES / TAGS
+   ───────────────────────────────────────────────────────────────────────── */
+
+.example-badge {
+  display: inline-block;
+  background: var(--color-surface-light);
+  color: var(--text-primary);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: var(--fs-body-sm);
+  font-weight: var(--fw-medium);
+}
+
+.example-badge-accent {
+  display: inline-block;
+  background: var(--color-accent-gold);
+  color: var(--text-on-dark);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: var(--fs-body-sm);
+  font-weight: var(--fw-medium);
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   HOW TO USE:
+   
+   1. Copy the relevant snippet for the component you're styling
+   2. Replace the class name with your actual class
+   3. Adjust padding, border-radius, etc. as needed for your design
+   4. All color and typography values automatically update if design changes
+   5. Remove this file after copying what you need
+   
+   ═══════════════════════════════════════════════════════════════════════════ */

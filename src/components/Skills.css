@@ -1,118 +1,435 @@
-.skills {
-  padding: 60px 5%;
-  min-height: auto;
+/* ═══════════════════════════════════════════════════════════════
+   SKILLS + JOURNEY - Two Column Section
+   ═══════════════════════════════════════════════════════════════ */
+
+.skills-journey {
+  position: relative;
+  width: 100%;
+  padding: 40px 40px 60px 40px;
+  background: var(--color-bg-primary);
+  border-top: 1px solid var(--border-color);
+  overflow: visible;
 }
 
-.skills-content {
+.skills-journey-container {
   max-width: 1200px;
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 48px;
+  align-items: flex-start;
+  overflow: visible;
 }
 
-.skills-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  align-items: center;
+/* ═══════════════════════════════════════════════════════════════
+   COLUMN HEADINGS
+   ═══════════════════════════════════════════════════════════════ */
+
+.column-heading {
+  font-family: var(--font-display);
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-bottom: 32px;
+  letter-spacing: -0.5px;
+  line-height: 1.1;
 }
 
-.skill-card {
-  background: var(--card-bg);
-  border: 2px solid var(--border-color);
-  border-radius: 15px;
-  padding: 20px 30px;
-  text-align: center;
-  box-shadow: var(--shadow-sm);
-  transition: all 0.3s ease;
-  cursor: pointer;
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  min-width: 180px;
-}
+/* ═══════════════════════════════════════════════════════════════
+   LEFT - SKILLS COLUMN
+   ═══════════════════════════════════════════════════════════════ */
 
-.skill-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(107, 138, 170, 0.1), transparent);
-  transition: left 0.5s ease;
-}
-
-.skill-card:hover::before {
-  left: 100%;
-}
-
-.skill-card:hover {
-  transform: translateY(-10px) scale(1.05);
-  border-color: var(--primary-accent);
-  box-shadow: var(--shadow-lg);
-  background: rgba(107, 138, 170, 0.05);
-}
-
-.skill-icon {
-  font-size: 1.8rem;
-  color: var(--primary-accent);
-  transition: all 0.3s ease;
-  flex-shrink: 0;
-}
-
-.skill-card:hover .skill-icon {
-  transform: rotateY(360deg);
-  color: var(--hover-accent);
-}
-
-.skill-info {
+.skills-column {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: flex-start;
-  flex: 1;
 }
 
-.skill-name {
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: var(--text-primary);
-  letter-spacing: 0.5px;
+.skills-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-content: flex-start;
+  max-width: 100%;
+}
+
+.skill-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 14px;
+  background: var(--color-white);
+  border: 1.5px solid var(--border-color);
+  border-radius: 18px;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--color-text-primary);
+  transition: all 0.25s ease;
+  cursor: pointer;
   white-space: nowrap;
 }
 
+.skill-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+  transition: all 0.25s ease;
+  flex-shrink: 0;
+}
+
+.skill-pill:hover {
+  background: var(--color-surface-light);
+  border-color: var(--color-accent-gold);
+  transform: translateY(-3px);
+}
+
+.skill-pill:hover .skill-icon {
+  color: var(--color-accent-gold);
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   CENTER DIVIDER
+   ═══════════════════════════════════════════════════════════════ */
+
+.divider {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.divider-line {
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  background: var(--color-accent-gold);
+  opacity: 0.2;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.divider-dot {
+  width: 8px;
+  height: 8px;
+  background: var(--color-accent-gold);
+  border-radius: 50%;
+  opacity: 0.3;
+  position: relative;
+  z-index: 2;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   RIGHT - JOURNEY COLUMN
+   ═══════════════════════════════════════════════════════════════ */
+
+.journey-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  overflow: visible;
+  min-width: 0;
+}
+
+.journey-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  overflow: visible;
+}
+
+.journey-item {
+  display: flex;
+  gap: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  align-items: flex-start;
+}
+
+/* Journey Marker (Dot & Line) */
+.journey-marker {
+  position: relative;
+  flex-shrink: 0;
+  width: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.journey-dot {
+  width: 12px;
+  height: 12px;
+  background: var(--color-white);
+  border: 2px solid var(--color-text-primary);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  z-index: 2;
+  position: relative;
+}
+
+.journey-item:hover .journey-dot {
+  background: var(--color-accent-gold);
+  border-color: var(--color-accent-gold);
+  transform: scale(1.4);
+}
+
+.journey-line {
+  position: absolute;
+  top: 16px;
+  width: 2px;
+  height: calc(100% + 16px);
+  background: var(--color-text-primary);
+  opacity: 0.3;
+}
+
+.journey-item:last-child .journey-line {
+  display: none;
+}
+
+/* Journey Content */
+.journey-content {
+  flex: 1;
+  padding-top: 2px;
+  position: relative;
+  overflow: visible;
+  display: block;
+  min-width: 0;
+}
+
+.journey-year {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  letter-spacing: 0.5px;
+  margin-bottom: 2px;
+}
+
+.journey-title {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  line-height: 1.3;
+}
+
+.journey-item:hover .journey-title {
+  color: var(--color-text-secondary);
+}
+
+/* Journey Description - Animated Floating Panel */
+.journey-description {
+  position: absolute;
+  top: -8px;
+  left: calc(100% + 16px);
+  background: var(--color-surface-light);
+  border: 1px solid rgba(23, 26, 70, 0.1);
+  border-radius: 8px;
+  padding: 14px 16px;
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  color: var(--color-text-primary);
+  line-height: 1.5;
+  width: 220px;
+  max-width: 220px;
+  white-space: normal;
+  word-wrap: break-word;
+  z-index: 50;
+  box-shadow: 0 4px 12px rgba(23, 26, 70, 0.08);
+  pointer-events: none;
+}
+
+/* For last items, position on left to prevent overflow */
+.journey-item:nth-child(4) .journey-description,
+.journey-item:nth-child(5) .journey-description {
+  left: auto;
+  right: calc(100% + 16px);
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   RESPONSIVE - TABLET (1024px and below)
+   ═══════════════════════════════════════════════════════════════ */
+
+@media (max-width: 1024px) {
+  .skills-journey {
+    padding: 40px 30px 50px 30px;
+  }
+
+  .skills-journey-container {
+    gap: 40px;
+  }
+
+  .column-heading {
+    font-size: 1.75rem;
+    margin-bottom: 24px;
+  }
+
+  .journey-timeline {
+    gap: 20px;
+  }
+
+  .journey-item {
+    gap: 14px;
+  }
+
+  .skills-pills {
+    gap: 9px;
+  }
+
+  .skill-pill {
+    padding: 7px 12px;
+    font-size: 0.8rem;
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   RESPONSIVE - MOBILE (768px and below) - STACKED LAYOUT
+   ═══════════════════════════════════════════════════════════════ */
+
 @media (max-width: 768px) {
-  .skills-grid {
-    gap: 15px;
+  .skills-journey {
+    padding: 40px 20px 50px 20px;
   }
 
-  .skill-card {
-    padding: 15px 20px;
-    min-width: 150px;
+  .skills-journey-container {
+    grid-template-columns: 1fr;
+    gap: 0;
+    align-items: stretch;
   }
 
-  .skill-icon {
+  .skills-column {
+    padding-bottom: 32px;
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .journey-column {
+    padding-top: 32px;
+    justify-content: flex-start;
+  }
+
+  /* Remove vertical divider on mobile */
+  .divider {
+    display: none;
+  }
+
+  .column-heading {
     font-size: 1.5rem;
+    margin-bottom: 20px;
   }
 
-  .skill-name {
-    font-size: 0.9rem;
+  .skills-pills {
+    gap: 8px;
+  }
+
+  .skill-pill {
+    padding: 7px 12px;
+    font-size: 0.8rem;
+  }
+
+  .journey-timeline {
+    gap: 18px;
+  }
+
+  .journey-item {
+    gap: 12px;
+  }
+
+  .journey-year {
+    font-size: 0.7rem;
+  }
+
+  .journey-title {
+    font-size: 0.85rem;
+  }
+
+  .journey-description {
+    position: static;
+    width: auto;
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin-top: 4px;
+    font-size: 0.75rem;
+    box-shadow: none;
   }
 }
 
 @media (max-width: 480px) {
-  .skill-card {
-    min-width: 140px;
-    padding: 12px 15px;
-    gap: 10px;
+  .skills-journey {
+    padding: 36px 16px 44px 16px;
+  }
+
+  .column-heading {
+    font-size: 1.3rem;
+    margin-bottom: 16px;
+  }
+
+  .skills-pills {
+    gap: 7px;
+  }
+
+  .skill-pill {
+    padding: 6px 10px;
+    font-size: 0.75rem;
   }
 
   .skill-icon {
-    font-size: 1.3rem;
+    font-size: 0.8rem;
   }
 
-  .skill-name {
-    font-size: 0.85rem;
+  .journey-timeline {
+    gap: 16px;
+  }
+
+  .journey-item {
+    gap: 10px;
+  }
+
+  .journey-marker {
+    width: 18px;
+  }
+
+  .journey-dot {
+    width: 9px;
+    height: 9px;
+    border-width: 1.5px;
+  }
+
+  .journey-line {
+    width: 1.5px;
+    top: 14px;
+  }
+
+  .journey-year {
+    font-size: 0.65rem;
+  }
+
+  .journey-title {
+    font-size: 0.8rem;
+  }
+
+  .journey-description {
+    font-size: 0.7rem;
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   PREFERS REDUCED MOTION
+   ═══════════════════════════════════════════════════════════════ */
+
+@media (prefers-reduced-motion: reduce) {
+  .skill-pill,
+  .journey-dot,
+  .journey-item,
+  .journey-title {
+    transition: none;
   }
 }

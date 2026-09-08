@@ -1,48 +1,134 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { motion } from 'framer-motion';
+import { FaExternalLinkAlt } from 'react-icons/fa';
 import './Projects.css';
 
 const Projects = () => {
+  const [hoveredProject, setHoveredProject] = useState(null);
+
   const projects = [
     {
-      title: "Wheels.ai",
-      description: "AI-powered platform focused on intelligent automation and AI integrations. Built scalable backend APIs, AI model integration systems, authentication systems, usage tracking, and subscription-based architecture. Worked with backend optimization, Docker-based services, AI model integrations, and scalable system design.",
-      tech: ["Django REST Framework", "React.js", "Docker", "PostgreSQL", "JWT Authentication", "AI Integrations"]
+      id: 1,
+      title: 'MentorCircle',
+      description: 'AI-powered STEM mentorship platform connecting students with mentors and peer-learning communities.',
+      image: `${process.env.PUBLIC_URL}/mentor-circle.png`,
+      tech: ['React', 'Django', 'REST APIs', 'Replicate', 'STEM'],
+      links: {
+        project: '#',
+        github: 'https://github.com/nehasree25/Mentor-Circle'
+      }
     },
     {
-      title: "QuizGen",
-      description: "AI-powered quiz generation platform capable of generating quizzes dynamically using AI. Includes JWT authentication, resume quiz functionality, quiz history, role-based access control, and backend API development.",
-      tech: ["Django REST Framework", "React.js", "JWT", "SQLite", "AI APIs"]
+      id: 2,
+      title: 'MarketLens',
+      description: 'Financial analytics platform providing market data exploration and actionable insights through intelligent analysis.',
+      image: `${process.env.PUBLIC_URL}/marketlens.png`,
+      tech: ['yfinance', 'FastAPI', 'React', 'PostgreSQL'],
+      links: {
+        project: '#',
+        github: 'https://github.com/nehasree25/MarketLens'
+      }
     },
     {
-      title: "MentorCircle",
-      description: "MentorCircle is an AI-powered STEM mentorship and peer-learning platform that connects students with mentors and communities based on interests, skills, and goals. It supports secure authentication, mentor matching, community circles, role management, and collaborative discussions.",
-      tech: ["React", "Tailwind CSS", "Django", "Django REST Framework", "SQLite", "JWT Authentication"]
+      id: 3,
+      title: 'CrossApp Agent',
+      description: 'AI-powered agent designed to interact with and automate tasks across multiple applications seamlessly.',
+      image: `${process.env.PUBLIC_URL}/cross-app-agent.png`,
+      tech: ['FastAPI', 'Langchain', 'Agents', 'React', 'Razorpay API'],
+      links: {
+        project: '#',
+        github: 'https://github.com/nehasree25/CrossApp-Agent'
+      }
     },
     {
-      title: "Liver Cancer Prediction",
-      description: "Machine learning project focused on predicting liver cancer using medical datasets and classification models. Worked on preprocessing, model training, evaluation, and prediction systems.",
-      tech: ["Python", "Scikit-learn", "Pandas", "NumPy", "Machine Learning"]
+      id: 4,
+      title: 'Research-Agent',
+      description: 'AI research assistant that gathers, analyzes, and summarizes information to accelerate research workflows.',
+      image: `${process.env.PUBLIC_URL}/research-agent.png`,
+      tech: ['Context API', 'React', 'Django REST Framework'],
+      links: {
+        project: '#',
+        github: 'https://github.com/nehasree25/Research-Studio'
+      }
     }
   ];
 
+  const cardVariants = {
+    rest: { y: 0 },
+    hover: { y: -6 }
+  };
+
+  const imageVariants = {
+    rest: { scale: 1 },
+    hover: { scale: 1.03 }
+  };
+
   return (
     <section id="projects" className="projects">
-      <h2 className="section-title">Featured Projects</h2>
-      
-      <div className="projects-content">
+      <div className="projects-container">
+        <h2 className="projects-heading">Projects</h2>
+        
         <div className="projects-grid">
-          {projects.map((project, index) => (
-            <div key={index} className="project-card">
-              <div className="project-header">
-                <h3 className="project-title">{project.title}</h3>
+          {projects.map((project) => (
+            <motion.div
+              key={project.id}
+              className="project-card"
+              variants={cardVariants}
+              initial="rest"
+              whileHover="hover"
+              onMouseEnter={() => setHoveredProject(project.id)}
+              onMouseLeave={() => setHoveredProject(null)}
+            >
+              {/* Project Image */}
+              <motion.div
+                className="project-image-wrapper"
+                variants={imageVariants}
+                initial="rest"
+                whileHover="hover"
+              >
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="project-image"
+                />
+                {hoveredProject === project.id && (
+                  <div className="project-overlay">
+                    <span className="view-indicator">View Project ↗</span>
+                  </div>
+                )}
+              </motion.div>
+
+              {/* Project Info */}
+              <div className="project-info">
+                <div className="project-header">
+                  <span className="project-number">{String(project.id).padStart(2, '0')}</span>
+                  <h3 className="project-title">{project.title}</h3>
+                </div>
+
+                <p className="project-description">{project.description}</p>
+
+                {/* Technology Tags */}
+                <div className="project-tech">
+                  {project.tech.map((tech, idx) => (
+                    <span key={idx} className="tech-tag">{tech}</span>
+                  ))}
+                </div>
+
+                {/* Links */}
+                <div className="project-links">
+                  <a
+                    href={project.links.github}
+                    className="project-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="View on GitHub"
+                  >
+                    <span>View Project</span>
+                    <FaExternalLinkAlt />
+                  </a>
+                </div>
               </div>
-              <p className="project-description">{project.description}</p>
-              <div className="project-tech">
-                {project.tech.map((tech, techIndex) => (
-                  <span key={techIndex} className="tech-tag">{tech}</span>
-                ))}
-              </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

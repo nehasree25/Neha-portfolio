@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import Navbar from './components/Navbar';
+import Header from './components/Header';
 import Hero from './components/Hero';
-import About from './components/About';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Experience from './components/Experience';
@@ -24,9 +23,8 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar />
+      <Header />
       <Hero />
-      <About />
       <Skills />
       <Projects />
       <Experience />

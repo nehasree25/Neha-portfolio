@@ -5,56 +5,55 @@ import './Hero.css';
 const Hero = () => {
   return (
     <section id="home" className="hero">
-      <div className="hero-background">
-        <div className="particle particle-1"></div>
-        <div className="particle particle-2"></div>
-        <div className="particle particle-3"></div>
-      </div>
-      
-      <div className="hero-content">
-        <div className="hero-visual">
-          <div className="hero-circle">
-            <div className="circle-inner">
-              <img src={`${process.env.PUBLIC_URL}/p1.jpeg`} alt="Neha Sree Mendu" className="hero-image" />
-            </div>
-          </div>
+      <div className="hero-container">
+        {/* Left - Profile Image */}
+        <div className="hero-image-wrapper">
+          <img
+            src={`${process.env.PUBLIC_URL}/profile.jpeg`}
+            alt="Neha Sree Mendu"
+            className="hero-profile-image"
+          />
         </div>
 
-        <div className="hero-text">
-          <h1 className="hero-greeting">Hi, I'm <span className="hero-name">Neha Sree Mendu</span></h1>
-          <h2 className="hero-title">Backend Developer</h2>
-          <p className="hero-subtitle">
-            Specializing in Django, scalable backend systems, and Machine Learning pipelines
-          </p>
+        {/* Right - Hero Text */}
+        <div className="hero-text-wrapper">
+          {/* Main Greeting */}
+          <h1 className="hero-greeting">I'm Neha.</h1>
+
+          {/* Role Line */}
+          <p className="hero-role">Backend Developer | Software Developer | AI Enthusiast</p>
+
+          {/* Professional Description */}
           <p className="hero-description">
-            Building AI-powered applications, robust backend systems, and intelligent solutions 
-            that transform ideas into scalable, production-ready software.
+            I build scalable, production-ready software that transforms ideas into reliable and practical digital products.
           </p>
-          
+
+          {/* Contact Buttons */}
           <div className="hero-buttons">
-            <a 
-              href="mailto:nehasreemendu@gmail.com" 
-              className="hero-btn btn-primary"
-              target="_blank"
-              rel="noopener noreferrer"
+            <a
+              href="mailto:nehasreemendu@gmail.com"
+              className="hero-button hero-button-primary"
+              title="Send email"
             >
               <FaEnvelope />
               <span>Email</span>
             </a>
-            <a 
-              href="https://www.linkedin.com/in/nehasreemendu" 
-              className="hero-btn btn-secondary"
+            <a
+              href="https://www.linkedin.com/in/nehasreemendu"
+              className="hero-button hero-button-secondary"
               target="_blank"
               rel="noopener noreferrer"
+              title="LinkedIn profile"
             >
               <FaLinkedin />
               <span>LinkedIn</span>
             </a>
-            <a 
-              href="https://github.com/nehasree25" 
-              className="hero-btn btn-tertiary"
+            <a
+              href="https://github.com/nehasree25"
+              className="hero-button hero-button-secondary"
               target="_blank"
               rel="noopener noreferrer"
+              title="GitHub profile"
             >
               <FaGithub />
               <span>GitHub</span>
@@ -62,7 +61,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-
     </section>
   );
 };

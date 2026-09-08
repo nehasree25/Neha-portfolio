@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import './Experience.css';
 
 const Experience = () => {
@@ -7,47 +8,61 @@ const Experience = () => {
       role: "AI Engineer Intern",
       company: "SmartX Technologies",
       period: "March 2026 – Present",
-      description: [
-        "Working on AI-powered platforms and scalable backend systems",
-        "Contributing to Wheels.ai development involving AI integrations, ML pipelines, backend APIs, authentication systems, and deployment workflows",
-        "Building intelligent automation solutions using Django REST Framework and machine learning technologies",
-        "Working with scalable architectures, Docker environments, and AI model integrations"
+      bullets: [
+        "AI-powered platforms and backend systems",
+        "Wheels.ai: ML pipelines, APIs, authentication",
+        "Django REST Framework automation",
+        "Docker, scalable architectures"
       ]
     },
     {
       role: "Python Developer Intern",
       company: "Infosys Springboard",
       period: "Sep 2025 – Nov 2025",
-      description: [
-        "Contributed to the development of an AI-powered quiz generation system using Django REST Framework",
-        "Implemented JWT-based authentication and role-based access control",
-        "Built and consumed RESTful APIs for quiz and user management",
-        "Worked with AI integration and backend optimization in a real-world project"
+      bullets: [
+        "AI-powered quiz generation system",
+        "JWT authentication and role-based access",
+        "RESTful APIs for quiz management",
+        "Backend optimization and AI integration"
       ]
     }
   ];
 
+  const cardVariants = {
+    hover: {
+      y: -4,
+      boxShadow: "0 8px 24px rgba(0, 0, 0, 0.12)"
+    }
+  };
+
   return (
     <section id="experience" className="experience">
-      <h2 className="section-title">Professional Experience</h2>
-      
-      <div className="experience-content">
-        <div className="experience-timeline">
+      <div className="experience-container">
+        <h2 className="experience-heading">Professional Experience</h2>
+        
+        <div className="experience-grid">
           {experiences.map((exp, index) => (
-            <div key={index} className="experience-item">
-              <div className="experience-header">
+            <motion.div
+              key={index}
+              className="experience-card"
+              variants={cardVariants}
+              whileHover="hover"
+              transition={{ duration: 0.3 }}
+            >
+              <div className="experience-card-header">
                 <div>
-                  <h3 className="experience-role">{exp.role}</h3>
+                  <h3 className="experience-title">{exp.role}</h3>
                   <p className="experience-company">{exp.company}</p>
                 </div>
                 <span className="experience-period">{exp.period}</span>
               </div>
-              <ul className="experience-description">
-                {exp.description.map((item, itemIndex) => (
-                  <li key={itemIndex}>{item}</li>
+              
+              <ul className="experience-bullets">
+                {exp.bullets.map((bullet, bulletIndex) => (
+                  <li key={bulletIndex}>{bullet}</li>
                 ))}
               </ul>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

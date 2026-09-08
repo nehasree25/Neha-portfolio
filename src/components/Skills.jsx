@@ -90,6 +90,28 @@ const Skills = () => {
               </div>
             ))}
           </div>
+
+          {/* ACHIEVEMENTS */}
+          <div className="achievements-section">
+            <h3 className="achievements-heading">Achievements</h3>
+            <div className="achievements-list">
+              <div className="achievement-item">
+                <span className="achievement-number">01</span>
+                <div className="achievement-content">
+                  <div className="achievement-title">DSH Hackathon</div>
+                  <div className="achievement-subtitle">Top 50</div>
+                </div>
+              </div>
+
+              <div className="achievement-item">
+                <span className="achievement-number">02</span>
+                <div className="achievement-content">
+                  <div className="achievement-title">French A1</div>
+                  <div className="achievement-subtitle">Language Certification · Distinction</div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* CENTER DIVIDER */}

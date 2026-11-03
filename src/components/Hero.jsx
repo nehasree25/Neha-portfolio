@@ -9,7 +9,7 @@ const Hero = () => {
         {/* Left - Profile Image */}
         <div className="hero-image-wrapper">
           <img
-            src={`${process.env.PUBLIC_URL}/profile.jpeg`}
+            src={`${process.env.PUBLIC_URL}/profile.png`}
             alt="Neha Sree Mendu"
             className="hero-profile-image"
           />
